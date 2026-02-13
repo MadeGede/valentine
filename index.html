@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>untuk Chelsea Graciela Sansana · cinematic valentine</title>
+  
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <!-- NAVBAR COMPONENT -->
+  <nav class="navbar glass-effect">
+    <div class="nav-container">
+      <div class="nav-logo">C.G.S ❤️</div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#timeline" class="nav-link">Story</a>
+        <a href="#letter" class="nav-link">Letter</a>
+        <a href="#ending" class="nav-link">Future</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle romantic mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION - DENGAN FOTO CHELSEA DAN RESPONSIVE FIX -->
+  <section id="hero" class="hero-section fullscreen">
+    <div class="hero-particles" id="particles"></div>
+    
+    <!-- FOTO CHELSEA DI HERO SECTION -->
+    <div class="hero-photo-frame glass-effect">
+      <div class="hero-photo">
+        <img 
+          src="chelsea-hero.jpg" 
+          alt="Chelsea Graciela Sansana" 
+          class="hero-img"
+          loading="eager"
+          onerror="this.src='https://via.placeholder.com/300x400/9e4a5c/ffffff?text=Chelsea'"
+        >
+      </div>
+      <div class="hero-photo-caption">Chelsea Graciela </div>
+      <div class="hero-photo-caption">Sansana</div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-text-wrapper fade-reveal">
+        <p class="hero-subtitle">untuk satu orang yang mengubah hidupku...</p>
+        
+        <!-- NAMA DI-PISAH PER BARIS UNTUK RESPONSIVE -->
+        <h1 class="hero-title">
+          <span class="hero-name-line">Chelsea</span>
+          <span class="hero-name-line">Graciela</span>
+          <span class="hero-name-line">Sansana</span>
+        </h1>
+      </div>
+      
+      <div class="hero-button-wrapper blur-reveal">
+        <a href="#timeline" class="hero-btn glass-effect" id="startJourney">
+          <span class="btn-text">Mulai Perjalanan Kita</span>
+        </a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TIMELINE SECTION - DENGAN FOTO POLAROID -->
+  <section id="timeline" class="timeline-section">
+    <div class="container">
+      <div class="section-header fade-reveal">
+        <span class="section-tag">our story begins</span>
+        <h2 class="section-title">12 September 2024</h2>
+      </div>
+      
+      <!-- FOTO POLAROID DI TIMELINE -->
+      <div class="timeline-photo-grid">
+        <div class="polaroid-frame glass-effect float-1">
+          <div class="polaroid-photo">
+            <img src="pertemuan-pertama.jpg" alt="Pertemuan pertama kami" loading="lazy" onerror="this.src='https://via.placeholder.com/200x200/d4af7a/ffffff?text=12+Sept'">
+          </div>
+          <p class="polaroid-caption">Hari Kita Jadian ✨</p>
+        </div>
+        
+        <div class="polaroid-frame glass-effect float-2">
+          <div class="polaroid-photo">
+            <img src="kenangan-manis2.jpg" alt="Kenangan manis" loading="lazy" onerror="this.src='https://via.placeholder.com/200x200/ecc5c0/ffffff?text=Kenangan'">
+          </div>
+          <p class="polaroid-caption">PhotoBooth Pertama Kita 🤍</p>
+        </div>
+      </div>
+      
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item left reveal-item">
+          <div class="timeline-dot glass-effect"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-date">12 September 2024</div>
+            <p class="timeline-text">Sejak 12 September 2024, hidupku nggak pernah sepi lagi.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item right reveal-item">
+          <div class="timeline-dot glass-effect"></div>
+          <div class="timeline-content glass-card">
+            <p class="timeline-text">Lebih rame. Lebih ribut. Lebih banyak 'ih kamu apasih.'</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item left reveal-item">
+          <div class="timeline-dot glass-effect"></div>
+          <div class="timeline-content glass-card">
+            <p class="timeline-text">Tapi juga lebih banyak rasa pulang.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LETTER SECTION - DENGAN FOTO TERSELIP -->
+  <section id="letter" class="letter-section">
+    <div class="container">
+      <div class="letter-container glass-card">
+        
+        <!-- FOTO TERSELIP DI SURAT -->
+        <div class="letter-photo-attachment">
+          <div class="photo-clip"></div>
+          <div class="attached-photo">
+            <img 
+              src="chelsea-cantik.jpg" 
+              alt="Senyum Chelsea" 
+              loading="lazy"
+              class="attached-img"
+              onerror="this.src='https://via.placeholder.com/200x250/fbe4d0/732c3f?text=Chelsea'"
+            >
+          </div>
+          <div class="photo-sticky-note">
+            <span>✨ calon istiku ✨</span>
+          </div>
+        </div>
+        
+        <div class="letter-header">
+          <h2 class="letter-title fade-reveal">Untuk Chelsea Graciela Sansana,</h2>
+        </div>
+        
+        <div class="letter-body">
+         <p class="letter-paragraph reveal-text">
+Kadang aku mikir… gimana bisa aku jatuh cinta sama manusia yang hobinya asbun ngomong nggak jelas, manja nggak kenal waktu, dan ngeselin dengan penuh dedikasi?
+</p>
+
+<p class="letter-paragraph reveal-text">
+Kalau ada lomba bikin orang kesel, kamu pasti juara harapan satu. Tapi anehnya… kamu juga juara utama bikin aku nggak bisa pergi.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Kamu bisa tiba-tiba manja kayak anak kecil. Bisa tiba-tiba bahas hal random yang bahkan Google pun nyerah. Bisa tiba-tiba ngeselin cuma buat lihat aku reaksi.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Dan yang lebih aneh lagi? Aku bukannya capek. Aku malah nyaman.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Sejak 12 September 2024, hidupku berubah. Bukan jadi lebih tenang sih — justru lebih rame. Lebih banyak debat receh. Lebih banyak "ih kamu apasih." Tapi juga… lebih banyak rasa pulang.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Sayang, kamu itu chaos yang aku pilih. Dan dari semua kemungkinan hidup yang bisa aku jalani… aku milih yang ada kamu di dalamnya.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Aku jatuh cinta bukan cuma sama lucunya kamu. Tapi sama caramu hadir. Sama caramu bikin hari biasa terasa punya warna. Sama caramu yang mungkin nggak sadar, tapi selalu bikin aku ngerasa cukup.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Kadang tanpa sadar aku ngebayangin masa depan. Bangun pagi, masih debat kecil. Masih kamu yang ngomel random. Masih kamu yang manja. Masih kamu yang pura-pura jutek padahal pengen dipeluk.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Dan anehnya… itu nggak terdengar buruk sama sekali. Itu justru terdengar kayak sesuatu yang ingin aku jaga.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Kadang aku ngebayangin beberapa tahun ke depan. Bukan tentang hal besar. Cuma hal-hal sederhana. Bangun pagi dan masih bisa lihat kamu di sebelahku. Denger kamu ngomel kecil karena aku susah dibangunin. Hal receh yang mungkin buat orang lain biasa, tapi buat aku terasa berarti banget.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Aku ngebayangin kita tumbuh bareng. Sama-sama belajar jadi lebih dewasa. Sama-sama belajar sabar. Sama-sama belajar ngerti satu sama lain tanpa harus selalu dijelasin panjang lebar.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Aku nggak tahu hidup bakal bawa kita sejauh apa. Tapi kalau aku boleh milih… aku mau perjalanan itu tetap sama kamu.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Bukan karena aku takut sendirian. Tapi karena sejak kenal kamu, aku sadar… ada orang yang rasanya pantas diperjuangkan sampai sejauh itu.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Dan kalau suatu hari nanti aku datang dengan langkah yang lebih pasti, dengan tatapan yang lebih serius dari biasanya… semoga kamu sudah tahu jawabannya bahkan sebelum aku selesai bicara.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Aku nggak janji semuanya bakal selalu mudah. Tapi aku janji satu hal — selama kamu masih mau ada di sini, aku juga nggak akan kemana-mana.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Kalau suatu hari kamu capek, aku mau jadi tempat istirahatmu. Kalau kamu ragu, aku mau jadi alasan kenapa kamu tetap percaya. Dan kalau dunia terasa terlalu berat… aku mau jadi orang yang kamu cari pertama kali.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Karena pada akhirnya, dari semua hal yang bisa aku miliki… aku cuma benar-benar ingin satu hal yang sederhana: tetap punya kamu.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Bukan cuma hari ini. Bukan cuma besok. Tapi selama kamu masih memilihku juga.
+</p>
+
+<p class="letter-paragraph reveal-text">
+Dan kalau nanti hidup benar-benar membawaku sampai di titik itu… titik di mana aku berdiri di depan kamu bukan cuma dengan rasa, tapi dengan keputusan — semoga kamu tahu, dari awal sampai sejauh itu, hatiku nggak pernah pindah ke mana-mana. Tetap di kamu.
+</p>
+
+        </div>
+        
+        <div class="letter-signature">
+          <div class="signature-line"></div>
+          <p class="signature-name">dari MadeGede</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ENDING - DENGAN ANIMASI BUKA SURAT DAN FOTO -->
+  <section id="ending" class="ending-section">
+    <div class="ending-bg-stars" id="stars"></div>
+    <div class="container ending-container">
+      <div class="ending-content">
+        
+        <!-- AMPLOP SURAT (AWALNYA TERLIHAT) -->
+        <div class="envelope-container" id="envelopeContainer">
+          <div class="envelope">
+            <div class="envelope-flap"></div>
+            <div class="envelope-body">
+              <div class="envelope-heart">❤️</div>
+              <p class="envelope-text">Untuk Chelsea Sayang</p>
+            </div>
+            <div class="envelope-seal"></div>
+          </div>
+          <button class="open-letter-btn glass-effect" id="openLetterBtn">
+            <span>Buka Surat</span>
+            <span class="open-icon">✉️</span>
+          </button>
+        </div>
+        
+        <!-- ISI SURAT (MUNCUL SETELAH DIKLIK) - DENGAN FOTO -->
+        <div class="letter-content-container hidden" id="letterContentContainer">
+          <div class="letter-paper glass-card">
+            <div class="letter-paper-inner">
+              
+              <!-- FOTO DALAM SURAT -->
+              <div class="letter-pocket-photo">
+                <div class="pocket-photo-frame">
+                  <img 
+                    src="chelsea-cantik.jpg" 
+                    alt="Chelsea tersayang" 
+                    class="pocket-photo-img"
+                    onerror="this.src='https://via.placeholder.com/150x150/d4af7a/ffffff?text=Chelsea'"
+                  >
+                </div>
+                <div class="pocket-photo-label">my favorite view</div>
+              </div>
+              
+              <div class="letter-paper-header">
+                <span class="letter-decoration">✧</span>
+                <span class="letter-date">Untuk Chelsea Graciela Sansana</span>
+                <span class="letter-decoration">✧</span>
+              </div>
+              
+              <div class="letter-paper-body">
+                <p class="letter-paper-paragraph fade-in-sequence">Kalau suatu hari nanti aku benar-benar nanya…</p>
+                <h2 class="letter-paper-question fade-in-sequence delay-1">kamu masih mau jadi pilihanku?</h2>
+                
+                <div class="letter-actions fade-in-sequence delay-2">
+                  <button class="choice-btn glass-effect" id="choiceYes">Iya 🤍</button>
+                  <button class="choice-btn glass-effect" id="choiceVeryYes">Iya Banget 🤍</button>
+                </div>
+                
+                <div class="ending-response hidden" id="responseMessage">
+                  <div class="response-heart heartbeat">❤️</div>
+                  <p class="response-text">Aku cuma butuh waktu yang tepat… untuk benar-benar bilang,</p>
+                  <h3 class="proposal-text">Will you marry me someday?</h3>
+                </div>
+              </div>
+              
+              <div class="letter-paper-footer">
+                <span class="signature-small">dari seseorang yang memilihmu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Easter egg star -->
+        <div class="easter-egg-star" id="easterStar">⭐</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER - DENGAN MINI GALLERY -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- MINI GALLERY FOTO DI FOOTER -->
+      <div class="footer-gallery">
+        <h3 class="gallery-title">LOVE</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="chelsea-hero.jpg" alt="Kenangan 1" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150/9e4a5c/ffffff?text=Chelsea'">
+            <div class="gallery-overlay">❤️</div>
+          </div>
+          <div class="gallery-item">
+            <img src="pertemuan-pertama.jpg" alt="Kenangan 2" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150/d4af7a/ffffff?text=12+Sept'">
+            <div class="gallery-overlay">🤍</div>
+          </div>
+          <div class="gallery-item">
+            <img src="kenangan-manis.jpg" alt="Kenangan 3" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150/ecc5c0/ffffff?text=Kenangan'">
+            <div class="gallery-overlay">💕</div>
+          </div>
+          <div class="gallery-item">
+            <img src="chelsea-cantik.jpg" alt="Kenangan 4" loading="lazy" onerror="this.src='https://via.placeholder.com/150x150/fbe4d0/732c3f?text=Chelsea'">
+            <div class="gallery-overlay">✨</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-content">
+        <p class="footer-text">dibuat dengan sepenuh hati untuk Chelsea Graciela Sansana</p>
+        <p class="footer-date">12 September 2024 · selamanya</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING MUSIC TOGGLE -->
+  <button class="music-toggle glass-effect" id="musicToggle" aria-label="Toggle music">
+    <span class="music-icon">🔊</span>
+  </button>
+
+  <!-- Audio element -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="romantic-piano.mp3" type="audio/mpeg">
+    <!-- Fallback jika file tidak ada -->
+  </audio>
+
+  <!-- Scripts -->
+  <script src=" main.js"></script>
+</body>
+</html>
